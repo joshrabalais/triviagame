@@ -1,0 +1,208 @@
+body {
+    color:whitesmoke;
+    font-family: Helvetica, sans-serif;
+}
+
+:root {
+    background-color: rgb(32, 30, 42);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.54;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+img {
+    margin-top: 3.5rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 2.4rem;
+    width: 30rem;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    background: linear-gradient(90deg, rgb(82, 107, 161) 0%, rgb(82, 107, 161) 100%);
+    border-radius: 4px;
+    padding: 2rem;
+    margin-bottom: 13px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, .6);
+    transition: transform(150ms);
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(90deg, rgb(148, 145, 46) 0%, rgb(123, 117, 46) 100%);
+    color: whitesmoke;
+}
+
+#highscore-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.5);
+}
+
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+/* End Page CSS */
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(8, 114, 244, .6);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.fa-home {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(32, 30, 42);
+}
+/*MOBILE SCREEN*/
+@media screen and (max-width: 375px) {
+    .choice-container {
+        width: 100%;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        margin-left: 75px;
+    }
+    .minititle {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin-left: 75px;
+    }
+
+    img {
+        margin-left: 55px;
+    }
+
+    .btn, #highscore-btn {
+        margin-left: 50px;
+    }
+}
+/*SMALL SCREEN*/
+@media screen and (max-width: 767px) {
+    .choice-container {
+        min-width: 20rem;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 75px;
+    }
+    .minititle {
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+        margin-left: 75px;
+    }
+
+    img {
+        margin-left: 55px;
+    }
+
+    .btn, #highscore-btn {
+        margin-left: 50px;
+    }
+}
